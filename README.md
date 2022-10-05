@@ -14,13 +14,7 @@ Contribute to start your journey with hacktoberfest. Happy Hacking💻!!! (*Requ
 - ⚓You can follow ME😁 (optional).
 - ⚓Please don't Spam.
 
-
-
 </pre>
-
-### ⚡If your program have class try to use your class with its objects
-
-### ⚡If you are creating any PR then Add your name in CONTRIBUTORS.md file 
 
 ## 🛡Follow rules to get your PR's Merged!!!
 
