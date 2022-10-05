@@ -2,7 +2,7 @@
 # ✨Hacktoberfest 2022✨
 
 <img src="https://github.blog/wp-content/uploads/2022/10/hacktoberfestbanner.jpeg?resize=1200%2C630" />
-A Simple😉 beginner friendly😊 Repo for all programmers and coders. All contributors are requested to star🌟this repo and and folllllow me.
+A Simple beginner friendly Repo for all programmers and coders. All contributors are requested to star🌟this repo.
 
 Contribute to start your journey with hacktoberfest. Happy Hacking💻!!! (*Required)
 
@@ -11,8 +11,6 @@ Contribute to start your journey with hacktoberfest. Happy Hacking💻!!! (*Requ
 - ⚓Star this repo to get latest updates.
 - ⚓Give your file a proper extension according to language. Ex. .py, .java, .js .html .txt .png etc.
 - ⚓Name your file related to your topic.
-- ⚓Make sure you have entered your github - username, aim and date in your file as a comment.
-- ⚓Make sure you have entered your name in CONTRIBUTORS.md file as mentioned (It's your responsibility) (optional).
 - ⚓You can follow ME😁 (optional).
 - ⚓Please don't Spam.
 
