@@ -1,0 +1,25 @@
+//Solution to leetcode problem 1155. Number of Dice Rolls With Target Sum
+//Dp concept
+
+int M=1e9+7;
+class Solution {
+public:
+    int solve(int n1,int target,int k,vector<vector<int>> &dp)
+    {
+        if(dp[n1][target]!=-1)return dp[n1][target];
+        if(n1==0&&target==0)return dp[n1][target]=1;
+        if(n1==0)return dp[n1][target]=0;
+        dp[n1][target]=0;
+        for(int i=1;i<=k&&target>=i;i++)
+            dp[n1][target]=(dp[n1][target]+solve(n1-1,target-i,k,dp))%M;
+            
+        return dp[n1][target];
+    }
+    int numRollsToTarget(int n, int k, int target) {
+        vector<vector<int>> dp(n+1, vector<int>(target+1, -1));
+        
+        
+        return solve(n,target,k,dp);
+        //return dp[n-1][target];
+    }
+};
