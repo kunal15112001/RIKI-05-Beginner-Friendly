@@ -1,0 +1,35 @@
+Solution to Course Schedule
+Simple DFS plus cycle detection
+
+class Solution {
+public:
+    bool answer = false;
+    void dfs(int i, vector<int>&v, vector<vector<int>> &g){
+        if(answer)  return;
+        v[i] = 2;
+        for(auto it:g[i]){
+            if(!v[it])  dfs(it,v,g);
+            else if(v[it]==2){
+                answer = true;
+                return;
+            }
+        }
+        v[i] = 1;
+    }
+    
+    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
+        vector<int> v(numCourses);
+        vector<vector<int>> g(numCourses);
+        for(auto i:prerequisites)
+            g[i[0]].push_back(i[1]);
+        for(int i=0;i<numCourses;i++){
+            if(!v[i]){
+                answer = false;
+                dfs(i,v,g);
+                if(answer)
+                    return false;
+            }
+        }
+        return true;
+    }
+};
